@@ -15,7 +15,6 @@ Kubernetes deployments can encounter various issues ranging from pod scheduling 
 ## Features
 
 - **Step-by-Step Troubleshooting Instructions**: Navigate problems systematically.
-- **Flowcharts**: Visualize solutions with embedded diagrams.
 - **Command Examples**: Useful Kubernetes CLI commands.
 
 ## Table of Contents
@@ -27,7 +26,7 @@ Kubernetes deployments can encounter various issues ranging from pod scheduling 
 5. [General Debugging Commands](#general-debugging-commands)
 
  
-### Pods Troubleshooting Flowchart
+### Troubleshooting Pods
 #### Step 1: Check Pod Status
 
 1. Run: 🐳🐳🐳
@@ -69,7 +68,7 @@ Kubernetes deployments can encounter various issues ranging from pod scheduling 
    * Correct image name/tag.
    * Configure access to private registries if required.
 
-### Services Troubleshooting Flowchart
+### Troubleshooting Services
 
 #### Step 1: Verify Service Configuration
  
@@ -95,7 +94,7 @@ Kubernetes deployments can encounter various issues ranging from pod scheduling 
 
 2. Verify the app's accessibility at http://localhost:8080.
 
-### Ingress Troubleshooting Flowchart
+### Troubleshooting Ingress
 
 #### Step 1: Inspect Ingress Configuration
 
@@ -122,6 +121,32 @@ Kubernetes deployments can encounter various issues ranging from pod scheduling 
 ```kubectl port-forward <ingress-pod-name> 8080:<ingress-port>```
 
 2. Test access at http://localhost:8080.
+
+### General Debugging Commands
+
+#### Inspect Pod Logs
+
+* Current logs: 📜📜📜
+
+  ```kubectl logs <pod-name>```
+
+* Previous logs: 🔍🔍🔍
+
+  ```kubectl logs <pod-name> --previous```
+
+####  Describe Resources
+
+* Pod details: 📄📄📄
+
+   ```kubectl describe pod <pod-name>```
+
+* Service details: 🛠️🛠️🛠️
+
+   ```kubectl describe service <service-name>```
+
+* Ingress details: 🌉🌉🌉
+
+  ```kubectl describe ingress <ingress-name>```
 
 ## Contributions
 
