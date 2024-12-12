@@ -1,6 +1,6 @@
 # Kubernetes Troubleshooting Guide
 
-This guide combines a textual step-by-step walkthrough with visual flowchart elements to help identify and resolve common issues in Kubernetes deployments. 🌟🌟🌟
+While working with Kubernetes on OKE (Oracle Kubernets Engine), I encountered many issues, so I decided to create a troubleshooting guide to help identify and resolve common problems in Kubernetes deployments. 🌟🌟🌟
 
 - Pod issues (e.g., CrashLoopBackOff, ImagePullBackOff)
 - Service misconfigurations
